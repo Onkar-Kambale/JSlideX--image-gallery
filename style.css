@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f2c3a, #3e8dab);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#toggleBtn {
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#toggleBtn:hover {
+  background: #eee;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.slider {
+  position: relative;
+  height: 400px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.slide.active {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  pointer-events: none; /* Allow buttons to go outside without breaking */
+}
+
+.nav button {
+  pointer-events: auto; /* So buttons still work */
+  z-index: 2;
+}
+
+.nav button:hover {
+  background: #fff;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+}
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #999;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dots span.active {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    max-width: 95%;
+  }
+}

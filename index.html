@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Image Slider</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Image Gallery</h1>
+    <button id="toggleBtn">☰ Show / Hide Gallery</button>
+  </header>
+
+  <div class="slider-container">
+    <div class="slider">
+      <img class="slide active" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg" />
+      <img class="slide" src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" />
+      <img class="slide" src="https://images.pexels.com/photos/1188083/pexels-photo-1188083.png" />
+      <img class="slide" src="https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg" />
+      <div class="nav">
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+      </div>
+    </div>
+    <div class="dots"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
