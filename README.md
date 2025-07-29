@@ -23,7 +23,7 @@ A sleek, responsive, and minimal image slider built with HTML, CSS, and jQuery. 
 
 ## 🚀 Live Demo
 
-🌐 [View the deployed site]()
+🌐 [View the deployed site](https://onkar-kambale.github.io/JSlideX--image-gallery/)
 
 ---
 
